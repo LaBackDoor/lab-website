@@ -1,23 +1,56 @@
-- id: doi:10.1371/journal.pcbi.1007128
+- id: orojo-vulnerability-forecasting-2024
   type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-    - type: manubot
-      link: https://greenelab.github.io/meta-review/
-    - type: source
-      text: Manuscript Source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
+  title: "Predicting Software Vulnerability Trends with Multi-Recurrent Neural Networks: A Time Series Forecasting Approach"
+  authors:
+    - A Orojo
+    - W Elumelu
+    - O Orojo
+    - M Donnahoo
+    - S Hutton
+  publisher: The International Conference on Natural Language Processing and Artificial Intelligence
+  date: 2024-01-01
   tags:
-    - open science
-    - collaboration
-  repo: greenelab/meta-review
+    - vulnerability prediction
+    - neural networks
+    - time series forecasting
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+- id: orojo-unified-framework-2024
+  type: paper
+  title: "A Unified Framework Incorporating AW-TRBAC and Semantic Variational Autoencoders for Dynamic Threat Detection and Access Control"
+  authors:
+    - A Orojo
+    - E El-Mahmoud
+    - S Hutton
+    - W Elumelu
+    - M Donahoo
+  publisher: DCS-Water 2024 1 (1)
+  date: 2024-01-01
+  tags:
+    - threat detection
+    - access control
+    - autoencoders
 
-- id: doi:10.7554/eLife.32822
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+- id: orojo-intrusion-detection-2023
+  type: paper
+  title: "Advancing Network Intrusion Detection with a Sliding Window-Based CNN and CFS-BA Feature Selection"
+  authors:
+    - A Orojo
+  publisher: ResearchGate
+  date: 2023-01-01
+  link: https://www.researchgate.net/publication
+  tags:
+    - intrusion detection
+    - CNN
+    - feature selection
+
+- id: orojo-digital-maze-2022
+  type: paper
+  title: "Navigating the Digital Maze: Exploring the Intersection of Social Media, Privacy, and Security"
+  authors:
+    - A Orojo
+  publisher: Webster University
+  date: 2022-01-01
+  tags:
+    - social media
+    - privacy
+    - security
