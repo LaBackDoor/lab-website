@@ -13,4 +13,4 @@ yarn.lock
 node_modules
 /.idea/
 .idea/
-_cite/.cache
+_cite/.cache/cache.db
