@@ -9,6 +9,7 @@
     - S Hutton
   publisher: The International Conference on Natural Language Processing and Artificial Intelligence
   date: 2024-01-01
+  description: "Research exploring time series forecasting methods to predict software vulnerability trends using multi-recurrent neural networks."
   tags:
     - vulnerability prediction
     - neural networks
@@ -25,10 +26,12 @@
     - M Donahoo
   publisher: DCS-Water 2024 1 (1)
   date: 2024-01-01
+  description: "This paper introduces a composite framework that integrates Dynamic Access Control and Intrusion Detection Systems with a focus on enhancing cyber resilience in Cyber Physical Systems."
   tags:
     - threat detection
     - access control
     - autoencoders
+    - cyber resilience
 
 - id: orojo-intrusion-detection-2023
   type: paper
@@ -37,11 +40,12 @@
     - A Orojo
   publisher: ResearchGate
   date: 2023-01-01
-  link: https://www.researchgate.net/publication
+  description: "This research proposes an efficient network intrusion detection system using sliding window-based CNN and feature selection techniques to enhance detection accuracy."
   tags:
     - intrusion detection
     - CNN
     - feature selection
+    - cybersecurity
 
 - id: orojo-digital-maze-2022
   type: paper
@@ -50,7 +54,9 @@
     - A Orojo
   publisher: Webster University
   date: 2022-01-01
+  description: "This study examines the complex relationships between social media usage, privacy concerns, and security implications in the digital age."
   tags:
     - social media
     - privacy
     - security
+    - digital ethics
