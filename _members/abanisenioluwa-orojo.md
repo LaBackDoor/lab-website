@@ -1,5 +1,5 @@
 ---
-name: Abanisenioluwa (Kolawole) Orojo
+name: Abanisenioluwa Orojo
 image: images/photo_2.jpg
 role: phd
 description: PhD Student
