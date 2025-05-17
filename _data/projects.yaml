@@ -1,47 +1,38 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: NetSpeech
+  subtitle: Transforming Packet Whispers into Actionable Intelligence
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/byteflow.svg
+  description: A transformer-based NLP approach that translates network traffic data (PCAP) into natural language for enhanced security analysis. This project enables security analysts to interpret network patterns more intuitively through advanced NMT techniques.
   tags:
-    - resource
+    - cybersecurity
+    - ml
+    - nlp
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: VulnScout
+  subtitle: Advanced Memory Composition in Multi-Recurrent Neural Networks
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/mrn.svg
+  description: A revolutionary approach to Multi-Recurrent Neural Networks (MRNs) focusing on autonomous memory composition through self-learning link ratios, enhanced pruning techniques, and adaptive activation functions. This research improves forecasting of software vulnerabilities while developing deeper MRN architectures with reduced computational overhead.
   tags:
-    - resource
+    - cybersecurity
+    - ml
+    - research
+    - time-series
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: TempoExplain
+  subtitle: Illuminating the Black Box of Temporal Neural Networks
+  image: images/tkan.png
+  description: Making temporal Komogorov-Arnold neural networks transparent through advanced explainability techniques. This project provides insights into how these complex models process time-series data for security applications.
   tags:
-    - resource
-    - publication
+    - explainability
+    - research
+    - ml
 
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+- title: MalwareRadar
+  subtitle: System Call Profiling with Stratos Shark
+  image: images/malreader.png
+  description: Revolutionary baseline analysis system for detecting malicious behavior patterns in system calls. This framework establishes new benchmarks for malware detection through behavioral analysis techniques.
   tags:
+    - cybersecurity
     - software
-
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+    - analysis

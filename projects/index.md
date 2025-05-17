@@ -7,10 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Explore my innovative cybersecurity research projects focusing on advanced neural networks, explainability, and cutting-edge threat detection. My work bridges the gap between machine learning and network security to address emerging challenges in the digital landscape.
 
-{% include tags.html tags="publication, resource, website" %}
+{% include tags.html tags="cybersecurity, research, software, ml" %}
 
 {% include search-info.html %}
 
