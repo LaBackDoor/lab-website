@@ -8,12 +8,10 @@ proofer: false
 
 # site social media and other links
 links:
-  email: contact@LaBackDoor.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: hello@labackdoor.com
+  orcid: 0009-0005-9448-1929
+  google-scholar: c2Ctag4AAAAJ
   github: LaBackDoor
-  twitter: LaBackDoor
-  youtube: LaBackDoor
 
 ### jekyll settings
 
