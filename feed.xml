@@ -1,1 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://labackdoor.github.io/lab-website/feed.xml" rel="self" type="application/atom+xml" /><link href="https://labackdoor.github.io/lab-website/" rel="alternate" type="text/html" /><updated>2025-05-23T13:56:29+00:00</updated><id>https://labackdoor.github.io/lab-website/feed.xml</id><title type="html">LaBackDoor</title><subtitle>An engaging 1-3 sentence description of your lab.</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://labackdoor.github.io/lab-website/feed.xml" rel="self" type="application/atom+xml" /><link href="https://labackdoor.github.io/lab-website/" rel="alternate" type="text/html" /><updated>2025-10-15T01:40:57+00:00</updated><id>https://labackdoor.github.io/lab-website/feed.xml</id><title type="html">LaBackDoor</title><subtitle>An engaging 1-3 sentence description of your lab.</subtitle><entry><title type="html">Starting the Journey to AI Security Engineering</title><link href="https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html" rel="alternate" type="text/html" title="Starting the Journey to AI Security Engineering" /><published>2025-10-14T00:00:00+00:00</published><updated>2025-10-15T01:35:30+00:00</updated><id>https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering</id><content type="html" xml:base="https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html"><![CDATA[<p>As a PhD student with a deep background in both AI and traditional security, I’m pivoting my focus to the practical, industry-driven field of <strong>AI Security Engineering</strong>. This post marks the beginning of my tracking journey, outlining the core distinction of this new discipline and my immediate plan.
+This blog will serve as a bi-weekly tracker for my learning and practical application in the emerging domain of <strong>AI Security Engineering</strong>. Given my foundational expertise in both AI and traditional Security, my focus here is on understanding where the practical industry implementation and threat modeling are heading.</p>
+
+<hr />
+
+<h2 id="ai-security-engineer-vs-traditional-security-engineer">AI Security Engineer vs. Traditional Security Engineer</h2>
+
+<p>The role of a <strong>Traditional Security Engineer</strong> is fundamentally about securing the environment around the application: the network, the operating system, the data layer, and the established code base (e.g., against OWASP Top 10). The threat landscape, while evolving, is relatively well-defined.</p>
+
+<p>The <strong>AI Security Engineer</strong> takes a distinct step forward, focusing on securing the <strong>Machine Learning (ML) lifecycle itself</strong>—the data, the model, and the deployment pipeline (MLOps). While traditional security protects the infrastructure <em>hosting</em> the model, AI Security protects the model’s <strong>integrity, confidentiality, and availability</strong> from <em>model-specific attacks</em>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Focus Area</th>
+      <th style="text-align: left">Traditional Security Engineering</th>
+      <th style="text-align: left">AI Security Engineering</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">**Primary Target**</td>
+      <td style="text-align: left">Networks, Endpoints, Applications, Databases</td>
+      <td style="text-align: left">Training Data, ML Model Artifacts, MLOps Pipelines</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">**Core Threat Model**</td>
+      <td style="text-align: left">Exploits, Vulnerabilities, Misconfigurations</td>
+      <td style="text-align: left">**Adversarial Attacks** (Evasion, Poisoning), **Privacy Attacks** (Model Inversion, Membership Inference), **Prompt Injection** (for LLMs)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">**Goal**</td>
+      <td style="text-align: left">CIA Triad of Infrastructure/Data</td>
+      <td style="text-align: left">Robustness and Trustworthiness of the ML System</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The discipline requires layering new ML-centric defenses over a robust foundation of cloud and application security.</p>
+
+<hr />
+
+<h2 id="resource-plan--progress-tracker">Resource Plan &amp; Progress Tracker</h2>
+
+<p>My goal is to dedicate a focused effort to bridge the theoretical knowledge gap with industry practices, especially since most deployments will be cloud-native.</p>
+
+<h3 id="-core-reading">📚 Core Reading</h3>
+
+<p>I will be extracting practical insights from the following texts:</p>
+
+<ul>
+  <li>The Developer’s Playbook for Large Language Model Security</li>
+  <li>Adversarial AI Attacks, Mitigations, and Defense Strategies</li>
+  <li>Practicing Trustworthy Machine Learning</li>
+</ul>
+
+<h3 id="-courses--certifications">🎓 Courses &amp; Certifications</h3>
+
+<p>I plan to examine the curriculum and key takeaways from these industry-recognized programs:</p>
+
+<ul>
+  <li>Certified AI Security Professional - AI Security Certification - Practical DevSecOps
+* AI security fundamentals - Training | Microsoft Learn</li>
+</ul>
+
+<h3 id="-daily-focus-the-mlops-foundation">🎥 Daily Focus: The MLOps Foundation</h3>
+
+<p>To ensure I understand the operational context of AI deployment, I am dedicating <strong>2 hours a day</strong> to mastering the production lifecycle. My starting point is a deep dive into AWS deployment:</p>
+
+<ul>
+  <li><strong>Resource:</strong> <strong>AWS Cloud Complete Bootcamp Course</strong> by Jeff Hale</li>
+  <li><strong>Link:</strong> <a href="https://www.youtube.com/watch?v=zA8guDqfv40">https://www.youtube.com/watch?v=zA8guDqfv40</a></li>
+</ul>
+
+<hr />
+
+<p>Looking forward to posting my first progress update / or lab deployment in two weeks!</p>]]></content><author><name>Banny Orojo</name></author><category term="ai-security" /><category term="devsecops" /><category term="llm-security" /><category term="mlops" /><summary type="html"><![CDATA[As a PhD student with a deep background in both AI and traditional security, I’m pivoting my focus to the practical, industry-driven field of AI Security Engineering. This post marks the beginning of my tracking journey, outlining the core distinction of this new discipline and my immediate plan. This blog will serve as a bi-weekly tracker for my learning and practical application in the emerging domain of AI Security Engineering. Given my foundational expertise in both AI and traditional Security, my focus here is on understanding where the practical industry implementation and threat modeling are heading.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://labackdoor.github.io/lab-website/images/security-data-model.jpg" /><media:content medium="image" url="https://labackdoor.github.io/lab-website/images/security-data-model.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
