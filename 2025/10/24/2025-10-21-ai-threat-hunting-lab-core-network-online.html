@@ -43,21 +43,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Blog | LaBackDoor</title>
+<title>LaBackDoor</title>
 
 <link rel="icon" href="/lab-website/images/icon.png">
 
-<meta name="title" content="Blog">
+<meta name="title" content="">
 <meta name="description" content="An engaging 1-3 sentence description of your lab.">
 
-<meta property="og:title" content="Blog">
+<meta property="og:title" content="">
 <meta property="og:site_title" content="LaBackDoor">
 <meta property="og:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="og:url" content="https://labackdoor.github.io/lab-website">
 <meta property="og:image" content="/lab-website/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="Blog">
+<meta property="twitter:title" content="">
 <meta property="twitter:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="twitter:url" content="https://labackdoor.github.io/lab-website">
 <meta property="twitter:card" content="summary_large_image">
@@ -73,9 +73,9 @@
     
       "@type": "WebSite",
     
-    "name": "Blog",
+    "name": "",
     "description": "An engaging 1-3 sentence description of your lab.",
-    "headline": "Blog",
+    "headline": "",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/lab-website/images/icon.png" }
@@ -286,60 +286,6 @@
     <link href="/lab-website/_styles/util.css" rel="stylesheet">
   
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 <!-- include all css in styles folder -->
 
@@ -491,9 +437,31 @@
   
   
 
-  <section class="background" data-size="page">
-    <h1 id="blog">
-<i class="icon fa-solid fa-feather-pointed"></i>Blog</h1>
+  <section class="background" data-size="1">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size>1</size>
+-->
+
+
+<h1 class="center"></h1>
+
+<div class="post-info">
+  
+
+  
+  
+
+  
+    <span data-tooltip="Originally published on">
+      <i class="icon fa-regular fa-calendar"></i>
+      <span>October 24, 2025</span>
+    </span>
+  
+
+  
+</div>
   </section>
 
   
@@ -507,158 +475,62 @@
   <size></size>
 -->
 
-<div class="search-box">
-  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
-    <i class="icon fa-solid fa-magnifying-glass"></i>
-  </button>
-</div>
 
-<div class="tags">
+<p>A quick update on the AI Threat Hunting Lab! The core network backbone is now complete, featuring a Kali attacker, an Ubuntu client, pfSense for routing, and Splunk for centralized visibility.
+Hello everyone, and welcome back! Following my initial post, I’ve decided to switch this tracking journey to a <strong>weekly update</strong> to better capture the rapid progress of building out the AI Threat Hunting Lab.</p>
+
+<p>I’m happy to report that the <strong>network backbone</strong> is now fully operational! This initial phase was crucial for establishing the foundational security and visibility layers before we dive into the machine learning components. This is the solid footing we need.</p>
+
+<hr>
+
+<h2 id="the-core-infrastructure-is-online">The Core Infrastructure is Online</h2>
+
+<p>As you can see in the provided diagram, the environment is now configured, establishing the <strong>Untrusted Network / Internet</strong> and the <strong>Management Network</strong>.</p>
+
+<ul>
+  <li>
+<strong>pfSense (192.168.1.1):</strong> This acts as our crucial network boundary, firewall, and router, securely connecting the attacker/client zone (10.100.1.1/24) to the management zone (192.168.1.1/24).</li>
+  <li>
+<strong>Attacker/Client Endpoints (Kali &amp; Ubuntu):</strong> We have <strong>Kali Linux</strong> (10.100.1.20) as the dedicated attacker machine and an <strong>Ubuntu Client</strong> (10.100.1.30) to simulate a standard user endpoint—perfect for practicing penetration testing and defense scenarios against our future AI application.</li>
+  <li>
+<strong>Splunk (192.168.1.10):</strong> The centerpiece of our visibility strategy is now online. Splunk is collecting logs from all relevant endpoints, giving us the centralized monitoring needed to analyze and hunt for threats from the attacker environment.</li>
+</ul>
+
+<hr>
+
+<h2 id="whats-next-the-ai-layer">What’s Next: The AI Layer</h2>
+
+<p>With the traditional security foundation set, the next phase will be the most exciting—integrating the <strong>AI/LLM components</strong>.</p>
+
+<p>The bottom section of the diagram—the <strong>LiteLLM Gateway</strong>, <strong>Local LLM Inference Server</strong>, <strong>MCP</strong>, and <strong>Vector Database</strong> — represents the core architecture for our <strong>target application</strong> we will be securing. The coming weeks will be spent deciding on the specific software/models for these roles and getting them wired into the network.</p>
+
+<p>This was a short but important update. The lab has a heartbeat! Stay tuned for next week as we start configuring the first AI component.</p>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+
+<div class="post-nav">
+  <span>
     
-      <a href="/lab-website/blog/?search=%22tag:%20ai-security%22" class="tag" data-tooltip='Show items with the tag "ai-security"'>
-        ai-security
+      <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
+      <a href="/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html">
+        Starting the Journey to AI Security Engineering
       </a>
     
-      <a href="/lab-website/blog/?search=%22tag:%20devsecops%22" class="tag" data-tooltip='Show items with the tag "devsecops"'>
-        devsecops
-      </a>
+  </span>
+  <span>
     
-      <a href="/lab-website/blog/?search=%22tag:%20llm-security%22" class="tag" data-tooltip='Show items with the tag "llm-security"'>
-        llm-security
-      </a>
-    
-      <a href="/lab-website/blog/?search=%22tag:%20mlops%22" class="tag" data-tooltip='Show items with the tag "mlops"'>
-        mlops
-      </a>
-    
-  </div>
-
-<div class="search-info"></div>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2025/10/24/2025-10-21-ai-threat-hunting-lab-core-network-online.html"></a>
-
-      <div class="post-info">
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>October 24, 2025</span>
-    </span>
-  
-
-  
-</div>
-
-
-
-
-      
-      
-      <p data-search="A quick update on the AI Threat Hunting Lab The core network backbone is now complete, featuring a Kali attacker, an Ubuntu client, pfSense for routing, and Splunk for centralized visibility.Hello everyone, and welcome back Following my initial post, I ve decided to switch this tracking journey to a weekly update to better capture the rapid progress of building out the AI Threat Hunting Lab.I m happy to report that the network backbone is now fully operational This initial phase was crucial for establishing the foundational security and visibility layers before we dive into the machine learning components. This is the solid footing we need.The Core Infrastructure is OnlineAs you can see in the provided diagram, the environment is now configured, establishing the Untrusted Network Internet and the Management Network. pfSense 192.168.1.1 : This acts as our crucial network boundary, firewall, and router, securely connecting the attacker client zone 10.100.1.1 24 to the management zone 192.168.1.1 24 . Attacker Client Endpoints Kali amp; Ubuntu : We have Kali Linux 10.100.1.20 as the dedicated attacker machine and an Ubuntu Client 10.100.1.30 to simulate a standard user endpoint perfect for practicing penetration testing and defense scenarios against our future AI application. Splunk 192.168.1.10 : The centerpiece of our visibility strategy is now online. Splunk is collecting logs from all relevant endpoints, giving us the centralized monitoring needed to analyze and hunt for threats from the attacker environment.What s Next: The AI LayerWith the traditional security foundation set, the next phase will be the most exciting integrating the AI LLM components.The bottom section of the diagram the LiteLLM Gateway, Local LLM Inference Server, MCP, and Vector Database represents the core architecture for our target application we will be securing. The coming weeks will be spent deciding on the specific software models for these roles and getting them wired into the network.This was a short but important update. The lab has a heartbeat Stay tuned for next week as we start configuring the first AI component.">
-        
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class="post-excerpt-container">
-  <div class="post-excerpt">
-    
-    
-    
-
-    
-      <a href="/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html" class="post-excerpt-image" aria-label="Starting the Journey to AI Security Engineering">
-        <img src="/lab-website/images/security-data-model.jpg" alt="Starting the Journey to AI Security Engineering" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="post-excerpt-text">
-      <a href="/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html">Starting the Journey to AI Security Engineering</a>
-
-      <div class="post-info">
-  
-    
-    
-      
-      
-        <span data-tooltip="Author">
-          <i class="icon fa-solid fa-feather-pointed"></i>
-          <span>banny orojo</span>
-        </span>
-      
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>October 14, 2025</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>October 24, 2025</span>
-    </span>
-  
-</div>
-
-
-  
-
-
-  <div class="tags">
-    
-      <a href="/lab-website/blog?search=%22tag:%20ai-security%22" class="tag" data-tooltip='Show items with the tag "ai-security"'>
-        ai-security
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20devsecops%22" class="tag" data-tooltip='Show items with the tag "devsecops"'>
-        devsecops
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20llm-security%22" class="tag" data-tooltip='Show items with the tag "llm-security"'>
-        llm-security
-      </a>
-    
-      <a href="/lab-website/blog?search=%22tag:%20mlops%22" class="tag" data-tooltip='Show items with the tag "mlops"'>
-        mlops
-      </a>
-    
-  </div>
-
-
-
-
-
-      
-      
-      <p data-search="As a PhD student with a deep background in both AI and traditional security, I m pivoting my focus to the practical, industry-driven field of AI Security Engineering. This post marks the beginning of my tracking journey, outlining the core distinction of this new discipline and my immediate plan.This blog will serve as a bi-weekly tracker for my learning and practical application in the emerging domain of AI Security Engineering. Given my foundational expertise in both AI and traditional Security, my focus here is on understanding where the practical industry implementation and threat modeling are heading.AI Security Engineer vs. Traditional Security EngineerThe role of a Traditional Security Engineer is fundamentally about securing the environment around the application: the network, the operating system, the data layer, and the established code base e.g., against OWASP Top 10 . The threat landscape, while evolving, is relatively well-defined.The AI Security Engineer takes a distinct step forward, focusing on securing the Machine Learning ML lifecycle itself the data, the model, and the deployment pipeline MLOps . While traditional security protects the infrastructure hosting the model, AI Security protects the model s integrity, confidentiality, and availability from model-specific attacks. Focus Area Traditional Security Engineering AI Security Engineering Primary Target Networks, Endpoints, Applications, Databases Training Data, ML Model Artifacts, MLOps Pipelines Core Threat Model Exploits, Vulnerabilities, Misconfigurations Adversarial Attacks Evasion, Poisoning , Privacy Attacks Model Inversion, Membership Inference , Prompt Injection for LLMs Goal CIA Triad of Infrastructure Data Robustness and Trustworthiness of the ML System The discipline requires layering new ML-centric defenses over a robust foundation of cloud and application security.Resource Plan amp; Progress TrackerMy goal is to dedicate a focused effort to bridge the theoretical knowledge gap with industry practices, especially since most deployments will be cloud-native. Core ReadingI will be extracting practical insights from the following texts: The Developer s Playbook for Large Language Model Security Adversarial AI Attacks, Mitigations, and Defense Strategies Practicing Trustworthy Machine Learning Courses amp; CertificationsI plan to examine the curriculum and key takeaways from these industry-recognized programs: Certified AI Security Professional - AI Security Certification - Practical DevSecOps AI security fundamentals - Training Microsoft Learn Daily Focus: The MLOps FoundationTo ensure I understand the operational context of AI deployment, I am dedicating 2 hours a day to mastering the production lifecycle. My starting point is a deep dive into AWS deployment: Resource: AWS Cloud Complete Bootcamp Course by Jeff Hale Link: https: www.youtube.com watch v zA8guDqfv40Looking forward to posting my first progress update or lab deployment in two weeks">
-        As a PhD student with a deep background in both AI and traditional security, I’m pivoting my focus to the practical, industry-driven field of AI Security Engineering. This post marks the beginning of my tracking journey, outlining the core distinction of this new discipline and my immediate plan.
-This blog will serve as a bi-weekly tracker for my learning and practical application in the emerging domain of AI Security Engineering. Given my foundational expertise in both AI and traditional Security, my focus here is on understanding where the practical industry implementation and threat modeling are heading.
-
-      </p>
-    </div>
-  </div>
+  </span>
 </div>
   </section>
 
