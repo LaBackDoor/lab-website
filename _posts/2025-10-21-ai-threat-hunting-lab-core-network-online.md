@@ -2,6 +2,7 @@
 title: AI Threat Hunting Lab: Week 1 Progress - Core Network & Visibility Online
 image: images/Blank_diagram.png
 author: banny orojo
+last_modified_at: "2025-10-21"
 tags:
   - ai-security
   - threat-hunting
