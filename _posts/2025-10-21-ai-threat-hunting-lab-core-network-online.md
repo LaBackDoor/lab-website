@@ -21,6 +21,8 @@ I'm happy to report that the **network backbone** is now fully operational! This
 
 As you can see in the provided diagram, the environment is now configured, establishing the **Untrusted Network / Internet** and the **Management Network**.
 
+![AI Threat Hunting Lab Diagram: Backbone Network](images/ai_sec_lab_week1.png)
+
 * **pfSense (192.168.1.1):** This acts as our crucial network boundary, firewall, and router, securely connecting the attacker/client zone (10.100.1.1/24) to the management zone (192.168.1.1/24).
 * **Attacker/Client Endpoints (Kali & Ubuntu):** We have **Kali Linux** (10.100.1.20) as the dedicated attacker machine and an **Ubuntu Client** (10.100.1.30) to simulate a standard user endpoint—perfect for practicing penetration testing and defense scenarios against our future AI application.
 * **Splunk (192.168.1.10):** The centerpiece of our visibility strategy is now online. Splunk is collecting logs from all relevant endpoints, giving us the centralized monitoring needed to analyze and hunt for threats from the attacker environment.
