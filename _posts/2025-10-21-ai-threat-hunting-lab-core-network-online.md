@@ -1,6 +1,6 @@
 ---
 title: AI Threat Hunting Lab: Week 1 Progress - Core Network & Visibility Online
-image: images/ai_sec_lab_week1.png
+image: images/Blank_diagram.png
 author: banny orojo
 last_modified_at: "2025-10-21"
 tags:
@@ -31,6 +31,6 @@ As you can see in the provided diagram, the environment is now configured, estab
 
 With the traditional security foundation set, the next phase will be the most exciting—integrating the **AI/LLM components**.
 
-The bottom section of the diagram—the **LiteLLM Gateway**, **Local LLM Inference Server**, **MCP**, and **Vector Database** — represents the core architecture for our **target application** we will be securing. The coming weeks will be spent deciding on the specific software/models for these roles and getting them wired into the network.
+The bottom section of the diagram—the **LiteLLM Gateway**, **Local LLM Inference Server**, **MCP**, and **Vector Database**—represents the core architecture for our *target application* we will be securing. The coming weeks will be spent deciding on the specific software/models for these roles and getting them wired into the network.
 
 This was a short but important update. The lab has a heartbeat! Stay tuned for next week as we start configuring the first AI component.
