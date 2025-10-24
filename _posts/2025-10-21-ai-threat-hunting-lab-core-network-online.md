@@ -2,12 +2,12 @@
 title: AI Threat Hunting Lab: Week 1 Progress - Core Network & Visibility Online
 image: images/ai_sec_lab_week1.png
 author: banny orojo
+last_modified_at: "2025-10-21"
 tags:
   - ai-security
   - threat-hunting
   - homelab
   - devsecops
-last_modified_at: "2025-10-21"
 ---
 
 A quick update on the AI Threat Hunting Lab! The core network backbone is now complete, featuring a Kali attacker, an Ubuntu client, pfSense for routing, and Splunk for centralized visibility.
