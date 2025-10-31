@@ -16,7 +16,7 @@ Welcome back to the AI Threat Hunting Lab build! As promised in last week's upda
 
 If you're looking to replicate this setup, this post will serve as your guide.
 
-![week_2_updated_diagram](images/ai_sec_lab_week2_diagram.png)
+![week_2_updated_diagram]({{ site.baseurl }}/images/ai_sec_lab_week2_diagram.png)
 
 ## Part 1: The Software Stack (The ISOs)
 
