@@ -43,21 +43,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online | LaBackDoor</title>
+<title>AI Threat Hunting Lab: Week 2 - Network Deep Dive | LaBackDoor</title>
 
 <link rel="icon" href="/lab-website/images/icon.png">
 
-<meta name="title" content="AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online">
+<meta name="title" content="AI Threat Hunting Lab: Week 2 - Network Deep Dive">
 <meta name="description" content="An engaging 1-3 sentence description of your lab.">
 
-<meta property="og:title" content="AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online">
+<meta property="og:title" content="AI Threat Hunting Lab: Week 2 - Network Deep Dive">
 <meta property="og:site_title" content="LaBackDoor">
 <meta property="og:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="og:url" content="https://labackdoor.github.io/lab-website">
 <meta property="og:image" content="/lab-website/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online">
+<meta property="twitter:title" content="AI Threat Hunting Lab: Week 2 - Network Deep Dive">
 <meta property="twitter:description" content="An engaging 1-3 sentence description of your lab.">
 <meta property="twitter:url" content="https://labackdoor.github.io/lab-website">
 <meta property="twitter:card" content="summary_large_image">
@@ -66,10 +66,10 @@
 
   <meta name="author" content="banny orojo">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2025-10-21T00:00:00+00:00">
-  <meta property="article:published_time" content="2025-10-21T00:00:00+00:00">
-  <meta property="article:modified_time" content="2025-10-21T00:00:00+00:00">
-  <meta name="revised" content="2025-10-21T00:00:00+00:00">
+  <meta property="og:updated_time" content="2025-10-28T00:00:00+00:00">
+  <meta property="article:published_time" content="2025-10-28T00:00:00+00:00">
+  <meta property="article:modified_time" content="2025-10-28T00:00:00+00:00">
+  <meta name="revised" content="2025-10-28T00:00:00+00:00">
 
 
 <script type="application/ld+json">
@@ -77,13 +77,13 @@
     "@context": "https://schema.org",
     
       "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online" },
-      "datePublished": "2025-10-21T00:00:00+00:00",
-      "dateModified": "2025-10-21T00:00:00+00:00",
+      "author": { "@type": "Person", "name": "AI Threat Hunting Lab: Week 2 - Network Deep Dive" },
+      "datePublished": "2025-10-28T00:00:00+00:00",
+      "dateModified": "2025-10-28T00:00:00+00:00",
     
-    "name": "AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online",
+    "name": "AI Threat Hunting Lab: Week 2 - Network Deep Dive",
     "description": "An engaging 1-3 sentence description of your lab.",
-    "headline": "AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online",
+    "headline": "AI Threat Hunting Lab: Week 2 - Network Deep Dive",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/lab-website/images/icon.png" }
@@ -445,15 +445,15 @@
   
   
 
-  <section class="background" data-size="1" style="--image: url('/lab-website/images/ai_sec_lab_week1.png')">
+  <section class="background" data-size="1" style="--image: url('/lab-website/images/ai_sec_lab_week2_diagram.png')">
     <!--
-  <background>images/ai_sec_lab_week1.png</background>
+  <background>images/ai_sec_lab_week2_diagram.png</background>
   <dark></dark>
   <size>1</size>
 -->
 
 
-<h1 class="center">AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online</h1>
+<h1 class="center">AI Threat Hunting Lab: Week 2 - Network Deep Dive</h1>
 
 <div class="post-info">
   
@@ -475,7 +475,7 @@
   
     <span data-tooltip="Originally published on">
       <i class="icon fa-regular fa-calendar"></i>
-      <span>October 21, 2025</span>
+      <span>October 28, 2025</span>
     </span>
   
 
@@ -504,6 +504,14 @@
         devsecops
       </a>
     
+      <a href="/lab-website/blog?search=%22tag:%20pfsense%22" class="tag" data-tooltip='Show items with the tag "pfsense"'>
+        pfsense
+      </a>
+    
+      <a href="/lab-website/blog?search=%22tag:%20splunk%22" class="tag" data-tooltip='Show items with the tag "splunk"'>
+        splunk
+      </a>
+    
   </div>
   </section>
 
@@ -519,37 +527,117 @@
 -->
 
 
-<p>A quick update on the AI Threat Hunting Lab! The core network backbone is now complete, featuring a Kali attacker, an Ubuntu client, pfSense for routing, and Splunk for centralized visibility.
-Hello everyone, and welcome back! Following my initial post, I’ve decided to switch this tracking journey to a <strong>weekly update</strong> to better capture the rapid progress of building out the AI Threat Hunting Lab.</p>
+<p>Welcome back to the AI Threat Hunting Lab build! As promised in last week’s update, this post is a technical deep dive into the core components, configurations, and software used to get the network backbone online.</p>
 
-<p>I’m happy to report that the <strong>network backbone</strong> is now fully operational! This initial phase was crucial for establishing the foundational security and visibility layers before we dive into the machine learning components. This is the solid footing we need.</p>
+<p>If you’re looking to replicate this setup, this post will serve as your guide.</p>
 
-<hr>
+<p><img src="../images/ai_sec_lab_week2_diagram.png" alt="week_2_updated_diagram"></p>
 
-<h2 id="the-core-infrastructure-is-online">The Core Infrastructure is Online</h2>
+<h2 id="part-1-the-software-stack-the-isos">Part 1: The Software Stack (The ISOs)</h2>
 
-<p>As you can see in the provided diagram, the environment is now configured, establishing the <strong>Untrusted Network / Internet</strong> and the <strong>Management Network</strong>.</p>
-
-<p><img src="../images/ai_sec_lab_week1.png" alt="AI Threat Hunting Lab Diagram: Backbone Network"></p>
+<p>First, let’s cover the “building blocks.” All components are running as virtual machines, and the first step was to download the necessary ISO files.</p>
 
 <ul>
   <li>
-<strong>pfSense (192.168.1.1):</strong> This acts as our crucial network boundary, firewall, and router, securely connecting the attacker/client zone (10.100.1.1/24) to the management zone (192.168.1.1/24).</li>
+<strong>pfSense (Firewall/Router):</strong> This is the heart of our network, managing all routing, segmentation, and firewall rules.
+    <ul>
+      <li>
+<strong>Download:</strong> <a href="https://www.pfsense.org/download/">https://www.pfsense.org/download/</a>
+</li>
+    </ul>
+  </li>
   <li>
-<strong>Attacker/Client Endpoints (Kali &amp; Ubuntu):</strong> We have <strong>Kali Linux</strong> (10.100.1.20) as the dedicated attacker machine and an <strong>Ubuntu Client</strong> (10.100.1.30) to simulate a standard user endpoint—perfect for practicing penetration testing and defense scenarios against our future AI application.</li>
+<strong>Kali Linux (Attacker):</strong> Our dedicated offensive machine.
+    <ul>
+      <li>
+<strong>Download:</strong> <a href="https://www.kali.org/get-kali/#kali-installer-images">https://www.kali.org/get-kali/#kali-installer-images</a>
+</li>
+    </ul>
+  </li>
   <li>
-<strong>Splunk (192.168.1.10):</strong> The centerpiece of our visibility strategy is now online. Splunk is collecting logs from all relevant endpoints, giving us the centralized monitoring needed to analyze and hunt for threats from the attacker environment.</li>
+<strong>Ubuntu Desktop (Client):</strong> Our “victim” or standard user endpoint.
+    <ul>
+      <li>
+<strong>Download:</strong> <a href="https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a>
+</li>
+    </ul>
+  </li>
+  <li>
+<strong>Splunk Free (SIEM):</strong> The core of our visibility and monitoring. We are using the free license.
+    <ul>
+      <li>
+<strong>Download:</strong> <a href="https://help.splunk.com/en/splunk-enterprise/administer/admin-manual/9.4/configure-splunk-licenses/about-splunk-free">Splunk Free Download Page</a>
+</li>
+    </ul>
+  </li>
 </ul>
 
 <hr>
 
-<h2 id="whats-next-the-ai-layer">What’s Next: The AI Layer</h2>
+<h2 id="part-2-pfsense-configuration-deep-dive">Part 2: pfSense Configuration Deep Dive</h2>
 
-<p>With the traditional security foundation set, the next phase will be the most exciting—integrating the <strong>AI/LLM components</strong>.</p>
+<p>Getting pfSense configured correctly is the most critical part of this foundation. As shown in last week’s diagram, we have a Management (MGMT) network (<code class="language-plaintext highlighter-rouge">192.168.1.1/24</code>) and an Corporate Network (Corp) network (<code class="language-plaintext highlighter-rouge">192.168.2.1/24</code>). I also created a DMZ network for AI services.</p>
 
-<p>The bottom section of the diagram—the <strong>LiteLLM Gateway</strong>, <strong>Local LLM Inference Server</strong>, <strong>MCP</strong>, and <strong>Vector Database</strong>—represents the core architecture for our <em>target application</em> we will be securing. The coming weeks will be spent deciding on the specific software/models for these roles and getting them wired into the network.</p>
+<p>Here are the exact configurations from my lab setup.</p>
 
-<p>This was a short but important update. The lab has a heartbeat! Stay tuned for next week as we start configuring the first AI component.</p>
+<h3 id="interface-configuration">Interface Configuration</h3>
+
+<p>Here is the breakdown of the virtual interfaces assigned in pfSense.</p>
+
+<p><img src="../images/pfsense_config.jpeg" alt="PFSence Configuration"></p>
+
+<h3 id="firewall-rules">Firewall Rules</h3>
+
+<p>Rules are key to segmenting our lab. The goal is to allow the MGMT network to access everything, but prevent the Corp and DMZ network from directly accessing the MGMT network.</p>
+
+<p><strong>WAN Rules:</strong></p>
+
+<p><img src="../images/wan_rules.png" alt="WAN Rules"></p>
+
+<p><strong>CORP Rules:</strong></p>
+
+<p><img src="../images/corp_rules.png" alt="Corp Rules"></p>
+
+<p><strong>DMZ Rules:</strong></p>
+
+<p><img src="../images/dmz_rules.png" alt="DMZ Rules"></p>
+
+<p><strong>MGMT Rules:</strong></p>
+
+<p><img src="../images/mgnt_rules.png" alt="Management Rules"></p>
+
+<h3 id="nat-rules">NAT Rules</h3>
+
+<p><img src="../images/nat_rules.png" alt="NAT Rules"></p>
+
+<hr>
+
+<h2 id="part-3-splunk-installation">Part 3: Splunk Installation</h2>
+
+<p>With the network foundation built, the next step was setting up our SIEM. I installed this on an Ubuntu VM with the static IP of <code class="language-plaintext highlighter-rouge">192.168.1.100</code> (on the MGMT network).</p>
+
+<p>The installation process is very straightforward. I followed this excellent step-by-step guide:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+<strong>Guide:</strong> [Installing Splunk Enterprise on Ubuntu: Step-by-Step Guide</td>
+      <td>by Daniel Opara</td>
+      <td>Medium](https://medium.com/@daniel.opara/installing-splunk-enterprise-on-ubuntu-step-by-step-guide-8d1b168a306)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>After installation, the next step (which I’ll detail later) is to configure the Splunk Universal Forwarder.</p>
+
+<hr>
+
+<h2 id="whats-next">What’s Next</h2>
+
+<p>That’s all for this technical breakdown! With the network configured and our SIEM online, the lab is truly ready.</p>
+
+<p>The next phase, as mentioned last week, is to begin deploying the AI/LLM components into the DMZ. Stay tuned!</p>
   </section>
 
   
@@ -568,17 +656,12 @@ Hello everyone, and welcome back! Following my initial post, I’ve decided to s
   <span>
     
       <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
-      <a href="/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html">
-        Starting the Journey to AI Security Engineering
+      <a href="/lab-website/2025/10/21/ai-threat-hunting-lab-core-network-online.html">
+        AI Threat Hunting Lab: Week 1 Progress - Core Network &amp; Visibility Online
       </a>
     
   </span>
   <span>
-    
-      Next post <i class="icon fa-solid fa-angle-right"></i><br>
-      <a href="/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html">
-        AI Threat Hunting Lab: Week 2 - Network Deep Dive
-      </a>
     
   </span>
 </div>

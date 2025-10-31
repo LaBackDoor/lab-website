@@ -540,9 +540,105 @@
         homelab
       </a>
     
+      <a href="/lab-website/blog/?search=%22tag:%20pfsense%22" class="tag" data-tooltip='Show items with the tag "pfsense"'>
+        pfsense
+      </a>
+    
+      <a href="/lab-website/blog/?search=%22tag:%20splunk%22" class="tag" data-tooltip='Show items with the tag "splunk"'>
+        splunk
+      </a>
+    
   </div>
 
 <div class="search-info"></div>
+
+<div class="post-excerpt-container">
+  <div class="post-excerpt">
+    
+    
+    
+
+    
+      <a href="/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html" class="post-excerpt-image" aria-label="AI Threat Hunting Lab: Week 2 - Network Deep Dive">
+        <img src="/lab-website/images/ai_sec_lab_week2_diagram.png" alt="AI Threat Hunting Lab: Week 2 - Network Deep Dive" loading="lazy" onerror="this.src = '/lab-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="post-excerpt-text">
+      <a href="/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html">AI Threat Hunting Lab: Week 2 - Network Deep Dive</a>
+
+      <div class="post-info">
+  
+    
+    
+      
+      
+        <span data-tooltip="Author">
+          <i class="icon fa-solid fa-feather-pointed"></i>
+          <span>banny orojo</span>
+        </span>
+      
+    
+  
+
+  
+  
+
+  
+    <span data-tooltip="Originally published on">
+      <i class="icon fa-regular fa-calendar"></i>
+      <span>October 28, 2025</span>
+    </span>
+  
+
+  
+</div>
+
+
+  
+
+
+  <div class="tags">
+    
+      <a href="/lab-website/blog?search=%22tag:%20ai-security%22" class="tag" data-tooltip='Show items with the tag "ai-security"'>
+        ai-security
+      </a>
+    
+      <a href="/lab-website/blog?search=%22tag:%20threat-hunting%22" class="tag" data-tooltip='Show items with the tag "threat-hunting"'>
+        threat-hunting
+      </a>
+    
+      <a href="/lab-website/blog?search=%22tag:%20homelab%22" class="tag" data-tooltip='Show items with the tag "homelab"'>
+        homelab
+      </a>
+    
+      <a href="/lab-website/blog?search=%22tag:%20devsecops%22" class="tag" data-tooltip='Show items with the tag "devsecops"'>
+        devsecops
+      </a>
+    
+      <a href="/lab-website/blog?search=%22tag:%20pfsense%22" class="tag" data-tooltip='Show items with the tag "pfsense"'>
+        pfsense
+      </a>
+    
+      <a href="/lab-website/blog?search=%22tag:%20splunk%22" class="tag" data-tooltip='Show items with the tag "splunk"'>
+        splunk
+      </a>
+    
+  </div>
+
+
+
+
+
+      
+      
+      <p data-search="Welcome back to the AI Threat Hunting Lab build As promised in last week s update, this post is a technical deep dive into the core components, configurations, and software used to get the network backbone online.If you re looking to replicate this setup, this post will serve as your guide.Part 1: The Software Stack The ISOs First, let s cover the building blocks. All components are running as virtual machines, and the first step was to download the necessary ISO files. pfSense Firewall Router : This is the heart of our network, managing all routing, segmentation, and firewall rules. Download: https: www.pfsense.org download Kali Linux Attacker : Our dedicated offensive machine. Download: https: www.kali.org get-kali kali-installer-images Ubuntu Desktop Client : Our victim or standard user endpoint. Download: https: ubuntu.com download desktop Splunk Free SIEM : The core of our visibility and monitoring. We are using the free license. Download: Splunk Free Download Page Part 2: pfSense Configuration Deep DiveGetting pfSense configured correctly is the most critical part of this foundation. As shown in last week s diagram, we have a Management MGMT network 192.168.1.1 24 and an Corporate Network Corp network 192.168.2.1 24 . I also created a DMZ network for AI services.Here are the exact configurations from my lab setup.Interface ConfigurationHere is the breakdown of the virtual interfaces assigned in pfSense.Firewall RulesRules are key to segmenting our lab. The goal is to allow the MGMT network to access everything, but prevent the Corp and DMZ network from directly accessing the MGMT network.WAN Rules:CORP Rules:DMZ Rules:MGMT Rules:NAT RulesPart 3: Splunk InstallationWith the network foundation built, the next step was setting up our SIEM. I installed this on an Ubuntu VM with the static IP of 192.168.1.100 on the MGMT network .The installation process is very straightforward. I followed this excellent step-by-step guide: Guide: Installing Splunk Enterprise on Ubuntu: Step-by-Step Guide by Daniel Opara Medium https: medium.com daniel.opara installing-splunk-enterprise-on-ubuntu-step-by-step-guide-8d1b168a306 After installation, the next step which I ll detail later is to configure the Splunk Universal Forwarder.What s NextThat s all for this technical breakdown With the network configured and our SIEM online, the lab is truly ready.The next phase, as mentioned last week, is to begin deploying the AI LLM components into the DMZ. Stay tuned">
+        Welcome back to the AI Threat Hunting Lab build! As promised in last week’s update, this post is a technical deep dive into the core components, configurations, and software used to get the network backbone online.
+
+      </p>
+    </div>
+  </div>
+</div>
 
 <div class="post-excerpt-container">
   <div class="post-excerpt">
