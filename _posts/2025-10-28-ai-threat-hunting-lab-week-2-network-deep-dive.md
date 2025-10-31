@@ -43,31 +43,29 @@ Here are the exact configurations from my lab setup.
 
 Here is the breakdown of the virtual interfaces assigned in pfSense.
 
-![PFSence Configuration](images/pfsense_config.jpeg)
+![PFSence Configuration]({{ site.baseurl }}/images/pfsense_config.jpeg)
 
 ### Firewall Rules
-
-Rules are key to segmenting our lab. The goal is to allow the MGMT network to access everything, but prevent the Corp and DMZ network from directly accessing the MGMT network.
-
+...
 **WAN Rules:**
 
-![WAN Rules](images/wan_rules.png)
+![WAN Rules]({{ site.baseurl }}/images/wan_rules.png)
 
 **CORP Rules:**
 
-![Corp Rules](images/corp_rules.png)
+![Corp Rules]({{ site.baseurl }}/images/corp_rules.png)
 
 **DMZ Rules:**
 
-![DMZ Rules](images/dmz_rules.png)
+![DMZ Rules]({{ site.baseurl }}/images/dmz_rules.png)
 
 **MGMT Rules:**
 
-![Management Rules](images/mgnt_rules.png)
+![Management Rules]({{ site.baseurl }}/images/mgnt_rules.png)
 
 ### NAT Rules
 
-![NAT Rules](images/nat_rules.png)
+![NAT Rules]({{ site.baseurl }}/images/nat_rules.png)
 
 
 ---
