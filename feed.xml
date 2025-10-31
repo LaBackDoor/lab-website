@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://labackdoor.github.io/lab-website/feed.xml" rel="self" type="application/atom+xml" /><link href="https://labackdoor.github.io/lab-website/" rel="alternate" type="text/html" /><updated>2025-10-31T15:29:54+00:00</updated><id>https://labackdoor.github.io/lab-website/feed.xml</id><title type="html">LaBackDoor</title><subtitle>An engaging 1-3 sentence description of your lab.</subtitle><entry><title type="html">AI Threat Hunting Lab: Week 2 - Network Deep Dive</title><link href="https://labackdoor.github.io/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html" rel="alternate" type="text/html" title="AI Threat Hunting Lab: Week 2 - Network Deep Dive" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-10-28T00:00:00+00:00</updated><id>https://labackdoor.github.io/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive</id><content type="html" xml:base="https://labackdoor.github.io/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html"><![CDATA[<p>Welcome back to the AI Threat Hunting Lab build! As promised in last week’s update, this post is a technical deep dive into the core components, configurations, and software used to get the network backbone online.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://labackdoor.github.io/lab-website/feed.xml" rel="self" type="application/atom+xml" /><link href="https://labackdoor.github.io/lab-website/" rel="alternate" type="text/html" /><updated>2025-10-31T15:33:27+00:00</updated><id>https://labackdoor.github.io/lab-website/feed.xml</id><title type="html">LaBackDoor</title><subtitle>An engaging 1-3 sentence description of your lab.</subtitle><entry><title type="html">AI Threat Hunting Lab: Week 2 - Network Deep Dive</title><link href="https://labackdoor.github.io/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html" rel="alternate" type="text/html" title="AI Threat Hunting Lab: Week 2 - Network Deep Dive" /><published>2025-10-28T00:00:00+00:00</published><updated>2025-10-28T00:00:00+00:00</updated><id>https://labackdoor.github.io/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive</id><content type="html" xml:base="https://labackdoor.github.io/lab-website/2025/10/28/ai-threat-hunting-lab-week-2-network-deep-dive.html"><![CDATA[<p>Welcome back to the AI Threat Hunting Lab build! As promised in last week’s update, this post is a technical deep dive into the core components, configurations, and software used to get the network backbone online.</p>
 
 <p>If you’re looking to replicate this setup, this post will serve as your guide.</p>
 
@@ -43,31 +43,29 @@
 
 <p>Here is the breakdown of the virtual interfaces assigned in pfSense.</p>
 
-<p><img src="images/pfsense_config.jpeg" alt="PFSence Configuration" /></p>
+<p><img src="/lab-website/images/pfsense_config.jpeg" alt="PFSence Configuration" /></p>
 
 <h3 id="firewall-rules">Firewall Rules</h3>
+<p>…
+<strong>WAN Rules:</strong></p>
 
-<p>Rules are key to segmenting our lab. The goal is to allow the MGMT network to access everything, but prevent the Corp and DMZ network from directly accessing the MGMT network.</p>
-
-<p><strong>WAN Rules:</strong></p>
-
-<p><img src="images/wan_rules.png" alt="WAN Rules" /></p>
+<p><img src="/lab-website/images/wan_rules.png" alt="WAN Rules" /></p>
 
 <p><strong>CORP Rules:</strong></p>
 
-<p><img src="images/corp_rules.png" alt="Corp Rules" /></p>
+<p><img src="/lab-website/images/corp_rules.png" alt="Corp Rules" /></p>
 
 <p><strong>DMZ Rules:</strong></p>
 
-<p><img src="images/dmz_rules.png" alt="DMZ Rules" /></p>
+<p><img src="/lab-website/images/dmz_rules.png" alt="DMZ Rules" /></p>
 
 <p><strong>MGMT Rules:</strong></p>
 
-<p><img src="images/mgnt_rules.png" alt="Management Rules" /></p>
+<p><img src="/lab-website/images/mgnt_rules.png" alt="Management Rules" /></p>
 
 <h3 id="nat-rules">NAT Rules</h3>
 
-<p><img src="images/nat_rules.png" alt="NAT Rules" /></p>
+<p><img src="/lab-website/images/nat_rules.png" alt="NAT Rules" /></p>
 
 <hr />
 
@@ -122,7 +120,7 @@ Hello everyone, and welcome back! Following my initial post, I’ve decided to s
 
 <p>The bottom section of the diagram—the <strong>LiteLLM Gateway</strong>, <strong>Local LLM Inference Server</strong>, <strong>MCP</strong>, and <strong>Vector Database</strong>—represents the core architecture for our <em>target application</em> we will be securing. The coming weeks will be spent deciding on the specific software/models for these roles and getting them wired into the network.</p>
 
-<p>This was a short but important update. The lab has a heartbeat! Stay tuned for next week as we start configuring the first AI component.</p>]]></content><author><name>banny orojo</name></author><category term="ai-security" /><category term="threat-hunting" /><category term="homelab" /><category term="devsecops" /><summary type="html"><![CDATA[A quick update on the AI Threat Hunting Lab! The core network backbone is now complete, featuring a Kali attacker, an Ubuntu client, pfSense for routing, and Splunk for centralized visibility. Hello everyone, and welcome back! Following my initial post, I’ve decided to switch this tracking journey to a weekly update to better capture the rapid progress of building out the AI Threat Hunting Lab.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://labackdoor.github.io/lab-website/images/ai_sec_lab_week1.png" /><media:content medium="image" url="https://labackdoor.github.io/lab-website/images/ai_sec_lab_week1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Starting the Journey to AI Security Engineering</title><link href="https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html" rel="alternate" type="text/html" title="Starting the Journey to AI Security Engineering" /><published>2025-10-14T00:00:00+00:00</published><updated>2025-10-31T15:25:26+00:00</updated><id>https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering</id><content type="html" xml:base="https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html"><![CDATA[<p>As a PhD student with a deep background in both AI and traditional security, I’m pivoting my focus to the practical, industry-driven field of <strong>AI Security Engineering</strong>. This post marks the beginning of my tracking journey, outlining the core distinction of this new discipline and my immediate plan.
+<p>This was a short but important update. The lab has a heartbeat! Stay tuned for next week as we start configuring the first AI component.</p>]]></content><author><name>banny orojo</name></author><category term="ai-security" /><category term="threat-hunting" /><category term="homelab" /><category term="devsecops" /><summary type="html"><![CDATA[A quick update on the AI Threat Hunting Lab! The core network backbone is now complete, featuring a Kali attacker, an Ubuntu client, pfSense for routing, and Splunk for centralized visibility. Hello everyone, and welcome back! Following my initial post, I’ve decided to switch this tracking journey to a weekly update to better capture the rapid progress of building out the AI Threat Hunting Lab.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://labackdoor.github.io/lab-website/images/ai_sec_lab_week1.png" /><media:content medium="image" url="https://labackdoor.github.io/lab-website/images/ai_sec_lab_week1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Starting the Journey to AI Security Engineering</title><link href="https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html" rel="alternate" type="text/html" title="Starting the Journey to AI Security Engineering" /><published>2025-10-14T00:00:00+00:00</published><updated>2025-10-31T15:31:17+00:00</updated><id>https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering</id><content type="html" xml:base="https://labackdoor.github.io/lab-website/2025/10/14/The-Journey-to-AI-Security-Engineering.html"><![CDATA[<p>As a PhD student with a deep background in both AI and traditional security, I’m pivoting my focus to the practical, industry-driven field of <strong>AI Security Engineering</strong>. This post marks the beginning of my tracking journey, outlining the core distinction of this new discipline and my immediate plan.
 This blog will serve as a bi-weekly tracker for my learning and practical application in the emerging domain of <strong>AI Security Engineering</strong>. Given my foundational expertise in both AI and traditional Security, my focus here is on understanding where the practical industry implementation and threat modeling are heading.</p>
 
 <hr />
