@@ -16,7 +16,7 @@ Welcome back to the AI Threat Hunting Lab build! As promised in last week's upda
 
 If you're looking to replicate this setup, this post will serve as your guide.
 
-![week_2_updated_diagram](../images/ai_sec_lab_week2_diagram.png)
+![week_2_updated_diagram](/images/ai_sec_lab_week2_diagram.png)
 
 ## Part 1: The Software Stack (The ISOs)
 
@@ -43,7 +43,7 @@ Here are the exact configurations from my lab setup.
 
 Here is the breakdown of the virtual interfaces assigned in pfSense.
 
-![PFSence Configuration](../images/pfsense_config.jpeg)
+![PFSence Configuration](/images/pfsense_config.jpeg)
 
 ### Firewall Rules
 
@@ -51,23 +51,23 @@ Rules are key to segmenting our lab. The goal is to allow the MGMT network to ac
 
 **WAN Rules:**
 
-![WAN Rules](../images/wan_rules.png)
+![WAN Rules](/images/wan_rules.png)
 
 **CORP Rules:**
 
-![Corp Rules](../images/corp_rules.png)
+![Corp Rules](/images/corp_rules.png)
 
 **DMZ Rules:**
 
-![DMZ Rules](../images/dmz_rules.png)
+![DMZ Rules](/images/dmz_rules.png)
 
 **MGMT Rules:**
 
-![Management Rules](../images/mgnt_rules.png)
+![Management Rules](/images/mgnt_rules.png)
 
 ### NAT Rules
 
-![NAT Rules](../images/nat_rules.png)
+![NAT Rules](/images/nat_rules.png)
 
 
 ---
